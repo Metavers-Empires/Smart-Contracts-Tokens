@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Metavers-Empires/Tenoch-Core/issues"
   },
-  "homepage": "https://github.com/Metavers-Empires/Tenoch-Core#readme"
+  "homepage": "https://github.com/Metavers-Empires/Tenoch-Core#readme",
+  "dependencies": {
+    "react-icons": "^4.3.1"
+  }
 }
