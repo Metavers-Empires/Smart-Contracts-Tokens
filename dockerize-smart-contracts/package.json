@@ -1,0 +1,5 @@
+"scripts"{
+    "setup": "docker-compose up --no-start --build",
+    "start": "docker-compose run smart-contracts test && dokcer-compose up --build -d ganache",
+    "stop": "docker-compose stop",
+    }

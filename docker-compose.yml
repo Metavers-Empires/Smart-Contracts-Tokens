@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    
+    # Ganache-cli
+  ganache:
+    image: trufflesuite/ganache-cli
+
+  # Smart contract source
+  smart-contracts:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    # The .env file should be set with necessary wallet keys and node information 
+    env_file:
+      - ./.env
+    depends_on:
+      - ganache
+    # For bind mounts, make sure to add your absolute path location on your system.
+    volumes:
+      # Mount build folder
+      - /home/user/dockerize-smart-contracts/src/build:/smart-contracts/build/
+      # Mount  log files
+      - /home/user/dockerize-smart-contracts/logs:/smart-contracts/logs/
