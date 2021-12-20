@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-import "./abstract/Conext.sol";
+import "";
 
 contract Ownable is Context {
     address private _owner;
