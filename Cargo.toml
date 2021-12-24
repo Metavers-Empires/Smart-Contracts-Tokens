@@ -1,0 +1,5 @@
+[package]
+name = "stablecoin"
+version = "0.1.0"
+edition = "2021"
+author = "Rafael Fuentes Rangel"
