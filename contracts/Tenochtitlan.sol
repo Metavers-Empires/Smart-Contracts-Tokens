@@ -3,8 +3,8 @@ pragma solidity ^0.8.4;
 /// @title Tenochtitlan Token (First metaverse of Metaverse-Empires)
 /// @author Rafael Fuentes Rangel
 import "./ERC20.sol";
-import "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol";
-import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+import "./abstract/draft-EIP712.sol";
+import "./library/ECDSA.sol";
 
 contract Tenochtitlan is ERC20, EIP712 {
     uint256 public constant MAX_SUPPLY = uint248(1e14 ether);
