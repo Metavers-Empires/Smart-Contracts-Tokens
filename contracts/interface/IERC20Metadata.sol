@@ -1,7 +1,14 @@
-import "./IERC20.sol";
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
- 
+
+import "../IERC20.sol";
+
+/**
+ * @dev Interface for the optional metadata functions from the ERC20 standard.
+ *
+ * _Available since v4.1._
+ */
 interface IERC20Metadata is IERC20 {
     /**
      * @dev Returns the name of the token.
@@ -18,14 +25,3 @@ interface IERC20Metadata is IERC20 {
      */
     function decimals() external view returns (uint8);
 }
-
-/*
- * @dev Provides information about the current execution context, including the
- * sender of the transaction and its data. While these are generally available
- * via msg.sender and msg.data, they should not be accessed in such a direct
- * manner, since when dealing with meta-transactions the account sending and
- * paying for execution may not be the actual sender (as far as an application
- * is concerned).
- *
- * This contract is only required for intermediate, library-like contracts.
- */
