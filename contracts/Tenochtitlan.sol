@@ -23,7 +23,7 @@ contract Tenochtitlan is ERC20, EIP712 {
 
     // for airdrop
     uint256 public constant AMOUNT_AIREDROP = MAX_SUPPLY - (AMOUNT_TECH + AMOUNT_STAKING + AMOUNT_LP);
-
+    /// @dev constructor focus in start the token with a name.
     constructor(string memory _name, string memory _symbol, address _signer) ERC20(_name, _symbol) EIP712("Tenoch", "MEXICA") {
         _mint(ADDR_TECH, AMOUNT_TECH);
         _mint(ADDR_STAKING, AMOUNT_STAKING);
