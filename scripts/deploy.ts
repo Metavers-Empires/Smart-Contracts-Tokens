@@ -1,4 +1,4 @@
-import { web3 } from "web3";
+import web3 from "web3";
 import { timestampInSecond } from "../utils/timestamp";
 import { OpenDAOStaking } from "../typechain";
 import { YEAR, HOUR } from "../utils/constants";
