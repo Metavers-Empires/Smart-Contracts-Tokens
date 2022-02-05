@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Metavers-Empires/Tenoch-Core#readme",
   "dependencies": {
-    "react-icons": "^4.3.1"
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "react-icons": "^4.3.1",
+    "web3": "^1.7.0"
   }
 }
